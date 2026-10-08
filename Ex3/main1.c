@@ -1,18 +1,17 @@
 #include <stdio.h>
 
-int main()
-{
-    int n = 4;
-    int spc = n;
-    for (int i = 1; i <= n; i++) {
-        for (int k = spc; k>=1;k--) {
+int main() {
+    int rows = 7;
+
+    for (int i = 1; i <= rows; i++) {
+        for (int space = 1; space <= rows - i; space++) {
             printf(" ");
         }
-        for (int j=1; j<=i;j++) {
-            printf("%d", i);
+        for (int j = 1; j <= i; j++) {
+            printf("%d ", i);
         }
         printf("\n");
-        spc--;
     }
 
+    return 0;
 }
